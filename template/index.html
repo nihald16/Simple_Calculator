@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang"an">
+<head>
+    <title>Substraction</title>
+</head>
+<body>
+    <h1><center>Sasta Calculator</h1>
+    <form action='{% url 'index' %}' method=POST> <center>
+        {% csrf_token %} <!--jinja pattern-->
+        values <input type='text' placeholder='Number' name='num1'><br><br>
+        <input type='submit' value='Submit'>
+    </form>
+</body>
+</html>
